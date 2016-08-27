@@ -1,0 +1,19 @@
+<div id='container'>
+<!-- Your code here -->
+  <nav class="navigation">
+    <ul>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#shorten">Shorten</a></li>
+      <li ng-click="logout()"><a href="#signin">Sign Out</a></li>
+    </ul>
+  </nav>
+  <form name="myForm">
+    <input type="url" name="input" ng-model="link.url" placeholder="Please enter url here..." required>
+    <button ng-click="addLink()">Create</button>
+    <div ng-show="myForm.input.$invalid">Link is invalid.</div>
+  </form>
+
+</div>
+
+
+
